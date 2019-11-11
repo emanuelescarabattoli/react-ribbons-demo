@@ -5,6 +5,8 @@ import {
   RibbonContainer,
   RightCornerRibbon,
   RightCornerLargeRibbon,
+  LeftCornerRibbon,
+  LeftCornerLargeRibbon
 } from "./ReactRibbons";
 
 const Application = () => {
@@ -19,6 +21,16 @@ const Application = () => {
         <RightCornerLargeRibbon backgroundColor="#cc0000" color="#f0f0f0" fontFamily="Arial">
           Foo Bar
         </RightCornerLargeRibbon>
+      </RibbonContainer>
+      <RibbonContainer className={style.demo}>
+        <LeftCornerRibbon backgroundColor="#444444" color="#f0f0f0" fontFamily="Arial">
+          Foo Bar
+        </LeftCornerRibbon>
+      </RibbonContainer>
+      <RibbonContainer className={style.demo}>
+        <LeftCornerLargeRibbon backgroundColor="#004400" color="#f0f0f0" fontFamily="Arial">
+          Foo Bar
+        </LeftCornerLargeRibbon>
       </RibbonContainer>
     </div>
   );
