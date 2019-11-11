@@ -78,3 +78,29 @@
     top: -10px;
     left: -10px;
 }
+
+.rightRibbon {
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.rightRibbonText {
+    position: absolute;
+    font-size: 0.8em;
+    top: 12px;
+    right: 7px;
+}
+
+.rightLargeRibbon {
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.rightLargeRibbonText {
+    position: absolute;
+    font-size: 0.9em;
+    top: 21px;
+    right: 9px;
+}

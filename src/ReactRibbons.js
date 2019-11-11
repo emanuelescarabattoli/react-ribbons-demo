@@ -65,3 +65,28 @@ export const LeftCornerLargeRibbon = ({ children, backgroundColor, color, fontFa
     </div>
   );
 };
+
+export const RightRibbon = ({ children, backgroundColor, color, fontFamily }) => {
+  return (
+    <div className={style.rightRibbon}>
+      <svg height="40" width="70">
+        <polygon points="10 10, 0 20, 10 30, 70 30, 70 10" fill={backgroundColor} strokeWidth="0" />
+        <polygon points="60 40, 60 30, 70 30" fill={`${backgroundColor}77`} strokeWidth="0" />
+      </svg>
+      <span style={{ color, fontFamily }} className={style.rightRibbonText}>{children}</span>
+    </div>
+  );
+};
+
+
+export const RightLargeRibbon = ({ children, backgroundColor, color, fontFamily }) => {
+  return (
+    <div className={style.rightLargeRibbon}>
+      <svg height="60" width="90">
+        <polygon points="15 15, 0 30, 15 45, 90 45, 90 15" fill={backgroundColor} strokeWidth="0" />
+        <polygon points="75 60, 75 40, 90 45" fill={`${backgroundColor}77`} strokeWidth="0" />
+      </svg>
+      <span style={{ color, fontFamily }} className={style.rightLargeRibbonText}>{children}</span>
+    </div>
+  );
+};
