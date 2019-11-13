@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "./assets/img/rr_512.png";
 import style from "./Application.scss";
 import {
   RibbonContainer,
@@ -21,56 +22,20 @@ const SampleText = () => (
 
 const Application = () => {
   return (
-    <div className={style.main}>
-      <RibbonContainer className={style.demo}>
-        <RightCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </RightCornerRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <RightCornerLargeRibbon backgroundColor="#cc0000" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </RightCornerLargeRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <LeftCornerRibbon backgroundColor="#444444" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </LeftCornerRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <LeftCornerLargeRibbon backgroundColor="#004400" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </LeftCornerLargeRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <RightRibbon backgroundColor="#cc4400" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </RightRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <RightLargeRibbon backgroundColor="#014599" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </RightLargeRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <LeftRibbon backgroundColor="#448812" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </LeftRibbon>
-        <SampleText />
-      </RibbonContainer>
-      <RibbonContainer className={style.demo}>
-        <LeftLargeRibbon backgroundColor="#051015" color="#f0f0f0" fontFamily="Arial">
-          Foo Bar
-        </LeftLargeRibbon>
-        <SampleText />
-      </RibbonContainer>
-    </div>
+    <header className={style.header}>
+      <div className={style.headerContent}>
+        <div className={style.logo}>
+          <img src={logo} alt="React Ribbons" />
+        </div>
+        <div className={style.title}>
+          <h1>React Ribbons</h1>
+          <p>
+            A React NPM package with a lot of fancy and easy to use ribbons components
+          </p>
+          <a href="#">GitHub Repo</a>
+        </div>
+      </div>
+    </header>
   );
 };
 
