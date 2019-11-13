@@ -76,7 +76,7 @@ yarn add react-ribbons`
         <div className={style.sectionTitle}>
           <h2>Examples</h2>
           <p>
-            Here you can find examples on haw to use the package
+            Here you can find examples on how to use the package
           </p>
         </div>
         <div className={style.columns}>
@@ -84,7 +84,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <RightCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </RightCornerRibbon>
@@ -108,7 +108,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <RightCornerLargeRibbon backgroundColor="#cc0000" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </RightCornerLargeRibbon>
@@ -132,7 +132,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <LeftCornerRibbon backgroundColor="#444444" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </LeftCornerRibbon>
@@ -156,7 +156,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <LeftCornerLargeRibbon backgroundColor="#004400" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </LeftCornerLargeRibbon>
@@ -180,7 +180,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <RightRibbon backgroundColor="#cc4400" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </RightRibbon>
@@ -204,7 +204,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <RightLargeRibbon backgroundColor="#014599" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </RightLargeRibbon>
@@ -228,7 +228,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <LeftRibbon backgroundColor="#448812" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </LeftRibbon>
@@ -252,7 +252,7 @@ yarn add react-ribbons`
             <div className={style.code}>
               <PrismCode component="pre" className="language-html">
                 {
-                  `<RibbonContainer className={style.demo}>
+                  `<RibbonContainer className="custom-class">
   <LeftLargeRibbon backgroundColor="#051015" color="#f0f0f0" fontFamily="Arial">
     Foo Bar
   </LeftLargeRibbon>
