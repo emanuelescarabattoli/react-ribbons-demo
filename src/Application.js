@@ -62,6 +62,17 @@ yarn add react-ribbons`
           </PrismCode>
 
         </div>
+        <p>
+          To import the package use the following snippet of code
+        </p>
+        <div className={style.code}>
+          <PrismCode component="pre" className="language-javascript">
+            {
+              "import { RibbonContainer,  RightCornerRibbon } from \"react-ribbons\";"
+            }
+          </PrismCode>
+
+        </div>
         <div className={style.sectionTitle}>
           <h2>Examples</h2>
           <p>
