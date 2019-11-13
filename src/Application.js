@@ -37,7 +37,7 @@ const Application = () => {
             <p>
               A React NPM package with a lot of fancy and easy to use ribbons components
             </p>
-            <a href="#">GitHub Repo</a>
+            <a href="https://github.com/emanuelescarabattoli/react-ribbons">GitHub Repo</a>
           </div>
         </div>
       </header>
