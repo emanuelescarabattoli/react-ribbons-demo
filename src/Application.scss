@@ -9,6 +9,17 @@ body {
   color: #222222;
 }
 
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+	background: transparent;
+}
+
+pre[class*="language-"] {
+	padding: 0em;
+	margin: 0;
+  overflow: auto;
+  font-size: 0.85em;
+}
+
 .demo {
   padding: 2rem;
   background-color: #f8f8f8;
@@ -19,15 +30,9 @@ body {
 
 .code {
   display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 0;
   background-color: #222222;
   padding: 1rem;
-  color: #ffa732;
   border-radius: 5px;
-  font-size: 1.1em;
-  line-height: 2em;
 }
 
 .header {
@@ -111,7 +116,7 @@ body {
 
 .columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 4rem;
+  grid-template-columns: 1fr 360px;
+  grid-column-gap: 2rem;
   margin-bottom: 4rem;
 }

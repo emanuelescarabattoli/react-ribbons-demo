@@ -1,9 +1,14 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const htmlWebPackPlugin = new HtmlWebPackPlugin({
   template: "./src/public/index.html",
   filename: "./index.html"
 });
+
+const copyPlugin = new CopyPlugin([
+  { from: "./src/assets/meta", to: "./" },
+]);
 
 module.exports = () => ({
   module: {
@@ -38,6 +43,17 @@ module.exports = () => ({
         ]
       },
       {
+        test: /\.css$/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader",
+          }
+        ]
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
@@ -48,7 +64,7 @@ module.exports = () => ({
       }
     ]
   },
-  plugins: [htmlWebPackPlugin],
+  plugins: [htmlWebPackPlugin, copyPlugin],
   devtool: "cheap-module-source-map",
   devServer: {
     historyApiFallback: true
