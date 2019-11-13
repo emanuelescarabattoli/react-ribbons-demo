@@ -11,7 +11,7 @@ import {
   RightLargeRibbon,
   LeftRibbon,
   LeftLargeRibbon
-} from "./ReactRibbons";
+} from "react-ribbons";
 
 const SampleText = () => (
   <span>

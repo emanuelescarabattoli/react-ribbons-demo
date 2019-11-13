@@ -5057,6 +5057,11 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
   integrity sha512-gbBVYR2p8mnriqAwWx9LbuUrShnAuSCNnuPGyc7GJrMVQtPDAh8iLpv7FRuMPFb56KkaVZIYSz1PrjI9q0QPCw==
 
+react-ribbons@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-ribbons/-/react-ribbons-1.0.1.tgz#2331fa6a60df26f38e4d0965eb5ea9687ebae429"
+  integrity sha512-lJwuwTnawA4deTDmFYjGzJraBzbi70cqzMgmDCl9y67vQTbeWBSxPHD0BWCevISsoCfHqjSIQF12Lyco0F65Wg==
+
 react@^16.10.2:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.11.0.tgz#d294545fe62299ccee83363599bf904e4a07fdbb"
