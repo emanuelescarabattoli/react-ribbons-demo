@@ -1,28 +1,10 @@
 import "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
-
 import React from "react";
 import PrismCode from "react-prism";
-
 import logo from "./assets/img/rr_512.png";
 import style from "./Application.scss";
-import {
-  RibbonContainer,
-  RightCornerRibbon,
-  RightCornerLargeRibbon,
-  LeftCornerRibbon,
-  LeftCornerLargeRibbon,
-  RightRibbon,
-  RightLargeRibbon,
-  LeftRibbon,
-  LeftLargeRibbon
-} from "react-ribbons";
-
-const SampleText = () => (
-  <span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </span>
-);
+import { RibbonContainer, Ribbon } from "react-ribbons";
 
 const Application = () => {
   return (
@@ -53,14 +35,13 @@ const Application = () => {
         </p>
         <div className={style.code}>
           <PrismCode component="pre" className="language-shell">
-            {
-              `// NPM setup
-npm install react-ribbons
-// Yarn setup
-yarn add react-ribbons`
-            }
+            {`
+// NPMetup
+npm inall react-ribbons
+// Yarsetup
+yarn add react-ribbons
+                `}
           </PrismCode>
-
         </div>
         <p>
           To import the package use the following snippet of code
@@ -80,194 +61,256 @@ yarn add react-ribbons`
           </p>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <RightCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </RightCornerRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon>
+        Foo bar
+    </Ribbon>
+    <b>These are the default values, check the code</b>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <RightCornerRibbon backgroundColor="#0088ff" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </RightCornerRibbon>
-              <SampleText />
+              <Ribbon>
+                Foo bar
+              </Ribbon>
+              <b>These are the default values, check the code</b>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <RightCornerLargeRibbon backgroundColor="#cc0000" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </RightCornerLargeRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="right" type="edge" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <RightCornerLargeRibbon backgroundColor="#cc0000" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </RightCornerLargeRibbon>
-              <SampleText />
+              <Ribbon side="right" type="edge" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <LeftCornerRibbon backgroundColor="#444444" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </LeftCornerRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="right" type="edge" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <LeftCornerRibbon backgroundColor="#444444" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </LeftCornerRibbon>
-              <SampleText />
+              <Ribbon side="right" type="edge" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <LeftCornerLargeRibbon backgroundColor="#004400" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </LeftCornerLargeRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="right" type="corner" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <LeftCornerLargeRibbon backgroundColor="#004400" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </LeftCornerLargeRibbon>
-              <SampleText />
+              <Ribbon side="right" type="corner" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <RightRibbon backgroundColor="#cc4400" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </RightRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="right" type="corner" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <RightRibbon backgroundColor="#cc4400" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </RightRibbon>
-              <SampleText />
+              <Ribbon side="right" type="corner" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <RightLargeRibbon backgroundColor="#014599" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </RightLargeRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="left" type="edge" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <RightLargeRibbon backgroundColor="#014599" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </RightLargeRibbon>
-              <SampleText />
+              <Ribbon side="left" type="edge" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <LeftRibbon backgroundColor="#448812" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </LeftRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="left" type="edge" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <LeftRibbon backgroundColor="#448812" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </LeftRibbon>
-              <SampleText />
+              <Ribbon side="left" type="edge" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>
         <div className={style.columns}>
-          <div>
-            <div className={style.code}>
-              <PrismCode component="pre" className="language-html">
-                {
-                  `<RibbonContainer className="custom-class">
-  <LeftLargeRibbon backgroundColor="#051015" color="#f0f0f0" fontFamily="Arial">
-    Foo Bar
-  </LeftLargeRibbon>
-  Lorem ipsum...
-</RibbonContainer>`
-                }
-              </PrismCode>
-            </div>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+  <RibbonContainer className={style.demo}>
+    <Ribbon side="left" type="corner" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+        Foo bar
+    </Ribbon>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </RibbonContainer>
+              `}
+            </PrismCode>
           </div>
           <div>
             <RibbonContainer className={style.demo}>
-              <LeftLargeRibbon backgroundColor="#051015" color="#f0f0f0" fontFamily="Arial">
-                Foo Bar
-              </LeftLargeRibbon>
-              <SampleText />
+              <Ribbon side="left" type="corner" size="normal" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </RibbonContainer>
+          </div>
+        </div>
+        <div className={style.columns}>
+          <div className={style.code}>
+            <PrismCode component="pre" className="language-html">
+              {`
+<RibbonContainer className={style.demo}>
+  <Ribbon side="left" type="corner" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+    Foo bar
+  </Ribbon>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</RibbonContainer>
+              `}
+            </PrismCode>
+          </div>
+          <div>
+            <RibbonContainer className={style.demo}>
+              <Ribbon side="left" type="corner" size="large" backgroundColor="#cc0000" color="#ccffff" fontFamily="sans">
+                Foo bar
+              </Ribbon>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </RibbonContainer>
           </div>
         </div>

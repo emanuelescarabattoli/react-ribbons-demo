@@ -6,9 +6,11 @@ const htmlWebPackPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 
-const copyPlugin = new CopyPlugin([
-  { from: "./src/assets/meta", to: "./" },
-]);
+const copyPlugin = new CopyPlugin({
+  patterns: [
+    { from: "./src/assets/meta", to: "./" },
+  ]
+});
 
 module.exports = () => ({
   module: {
