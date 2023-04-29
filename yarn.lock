@@ -3928,10 +3928,10 @@ react-prism@^4.3.2:
   resolved "https://registry.yarnpkg.com/react-prism/-/react-prism-4.3.2.tgz#5c07609539b3ba6f45eb33e7d6a3588df3270c21"
   integrity sha512-Z8BzDfWxzhngDtnZFjYj4RgHo7uqiWB4cOCpp//GFEpWbtINbCqHLIpL+q/f8ah5Aokw/uXkBkoLgvYIGgtm4A==
 
-react-ribbons@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-ribbons/-/react-ribbons-1.1.1.tgz#777c3369f49ee10fc4cb5253ff15403c8aa9d05d"
-  integrity sha512-y0CzCZY//euYGahURdQJ3Gp8nqe70XNo8ol20J5bakW47mXK0+EPkgH8bLBStl/xerHzJpxg9/qUo5m/njpamQ==
+react-ribbons@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-ribbons/-/react-ribbons-1.1.2.tgz#11ae86f7f5af7106c11b14889c0317f583b5434a"
+  integrity sha512-pg5v6vlIuUHbKx8ORH2W7DXBQ/r4sEpKuwG6SqChyp0LFs2UiubJYIb2iJZ9ww7nmbQhnATT2zQDWLqmhvfxoA==
 
 react@^18.2.0:
   version "18.2.0"
